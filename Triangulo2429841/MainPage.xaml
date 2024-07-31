@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Triangulo2429841.ViewsModels"
+             x:Class="Triangulo2429841.MainPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Entry Text="{Binding Lad1}" Placeholder="Ingrese el primer lado" Keyboard="Numeric" Margin="10" />
+        <Entry Text="{Binding Lad2}" Placeholder="Ingrese el segundo lado" Keyboard="Numeric" Margin="10" />
+        <Entry Text="{Binding Lad3}" Placeholder="Ingrese el tercer lado" Keyboard="Numeric" Margin="10" />
+        <Button Text="Calcular Area" Command="{Binding CalAreaCommand}" Margin="10"/>
+        <Entry Text="{Binding Areares}" Placeholder="Resultado" Margin="10" />
+    </StackLayout>
+
+</ContentPage>
